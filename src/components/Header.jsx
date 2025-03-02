@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -29,20 +30,20 @@ function Header() {
                 </a>
               </li>
               <li class='max-lg:border-b max-lg:py-3 px-3'>
-                <a href='javascript:void(0)'
-                  class='lg:hover:text-[#007bff] text-[#007bff] block text-[15px]'>Home</a>
+                <NavLink to={"/"} href='javascript:void(0)'
+                  class='lg:hover:text-[#007bff] text-[#007bff] block text-[15px]'>Home</NavLink>
               </li>
-              <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Team</a>
+              <li class='max-lg:border-b max-lg:py-3 px-3'><NavLink to={"/teams"} href='javascript:void(0)'
+                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Team</NavLink>
               </li>
-              <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Feature</a>
+              <li class='max-lg:border-b max-lg:py-3 px-3'><NavLink to={"/Feature"} href='javascript:void(0)'
+                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Feature</NavLink>
               </li>
-              <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Blog</a>
+              <li class='max-lg:border-b max-lg:py-3 px-3'><NavLink to={"/blog"} href='javascript:void(0)'
+                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>Blog</NavLink>
               </li>
-              <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>About</a>
+              <li class='max-lg:border-b max-lg:py-3 px-3'><NavLink to={"/About"} href='javascript:void(0)'
+                class='lg:hover:text-[#007bff] text-gray-800 block text-[15px]'>About</NavLink>
               </li>
             </ul>
           </div>
